@@ -3,7 +3,7 @@ body {
     font-family: sans-serif;
 }
 
-.banner {
+#banner {
     width: 100%;
     height: 650px;
     background-image: url(image/h6.jpg);
@@ -55,12 +55,15 @@ nav li:first-child {
     height: 80vh;
     width: 250px;
     padding-top: 0px !important;
-    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: rgba(255, 255, 255, 0.2); */
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-start;
     margin: 0px;
+    .cancel{
+        justify-content: end;
+    }
 }
 
 .menu {
@@ -71,7 +74,7 @@ nav li:first-child {
     display: none;
 }
 
-/* nav ul li::after {
+nav li::after {
     content: '';
     width: 0;
     height: 4px;
@@ -84,8 +87,9 @@ nav li:first-child {
 }
 
 nav ul li:hover::after {
-    width: 100%;
-} */
+    min-width: 20%;
+    max-width: 80%;
+}
 
 .content {
     width: 100%;
@@ -170,12 +174,12 @@ button:hover span {
     text-align: center;
 }
 
-.modernhome {
+#modernhome {
     width: 90%;
     height: 400px;
 }
 
-.modernhome img {
+#modernhome img {
     width: 100%;
     height: 100%;
 }
@@ -249,7 +253,7 @@ button:hover span {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
-.aboutpage h3 {
+#aboutpage h3 {
     text-align: center;
     font-weight: 100;
     /* color: crimson; */
@@ -257,7 +261,7 @@ button:hover span {
 
 }
 
-.aboutpage p {
+#aboutpage p {
     text-align: center;
     font-size: 14px;
     margin: 40px;
@@ -265,13 +269,13 @@ button:hover span {
     opacity: 90%;
 }
 
-.footer {
+#footer {
     width: 100%;
     height: 270px;
     background-color: #9e9e9e;
 }
 
-.footer h3 {
+#footer h3 {
     padding-top: 40px;
     text-align: center;
     font-weight: 100;
@@ -282,7 +286,7 @@ button:hover span {
     text-align: center;
 }
 
-.footer p {
+#footer p {
     text-align: center;
     font-size: 12px;
 }
@@ -292,14 +296,17 @@ button:hover span {
         transform: translateY(-20%);
     }
 
-    .modernhome {
+    #modernhome {
         padding: 40px;
         margin: 20px;
     }
 
-    .modernhome img {
+    #modernhome img {
         width: 100%;
         height: 100%;
+    }
+    .footerimage{
+        padding-top: 8%;
     }
 }
 
@@ -312,18 +319,21 @@ button:hover span {
         font-size: 16px;
     }
 
-    .modernhome {
+    #modernhome {
         padding: 40px;
         margin: 20px 0px;
     }
 
-    .modernhome img {
+    #modernhome img {
         width: 100%;
         height: 100%;
     }
 
     .scrollingimage {
         margin: 35px;
+    }
+    .footerimage{
+        padding-top: 8%;
     }
 }
 
@@ -350,12 +360,12 @@ button:hover span {
     .scrollingimage {
         margin: 30px;
     }
-    .modernhome {
+    #modernhome {
         padding: 40px;
         margin: 20px 0px;
     }
 
-    .modernhome img {
+    #modernhome img {
         width: 100%;
         height: 100%;
     }
@@ -385,12 +395,12 @@ button:hover span {
         font-size: 15px;
     }
 
-    .modernhome {
+    #modernhome {
         padding: 30px;
         margin: 20px 0px;
     }
 
-    .modernhome img {
+    #modernhome img {
         width: 100%;
         height: 100%;
     }
@@ -399,7 +409,7 @@ button:hover span {
         margin-inline: 10px;
         margin: 25px;
     }
-    .aboutpage p {
+    #aboutpage p {
         font-size: 16px;
     }
 
@@ -438,17 +448,17 @@ button:hover span {
         margin: 20px;
     }
 
-    .modernhome {
+    #modernhome {
         padding: 22px;
         margin: 20px 0px;
     }
 
-    .modernhome img {
+    #modernhome img {
         width: 100%;
         height: 100%;
     }
 
-    .aboutpage p {
+    #aboutpage p {
         font-size: 14px;
     }
 }
@@ -490,12 +500,12 @@ button:hover span {
         font-size: 13px;
     }
 
-    .modernhome {
+    #modernhome {
         padding: 12px;
         margin: 15px 0px;
     }
 
-    .modernhome img {
+    #modernhome img {
         align-items: center;
         width: 100%;
         height: 100%;
@@ -504,7 +514,7 @@ button:hover span {
     .scrollingimage {
         border: 10px solid white;
     }
-    .aboutpage p {
+    #aboutpage p {
         font-size: 12px;
     }
 
