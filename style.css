@@ -1,0 +1,514 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 650px;
+    background-image: url(image/h6.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+nav ul {
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    list-style: none;
+}
+
+nav li {
+    font-size: larger;
+    position: relative;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 0px 30px;
+    /* margin: 0px 30px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.slidermenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    width: 250px;
+    padding-top: 0px !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.humber {
+    display: none;
+}
+
+/* nav ul li::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: darkslategray;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+} */
+
+.content {
+    width: 100%;
+    top: 35%;
+    position: absolute;
+    transform: translateY(0%);
+    text-align: center;
+}
+
+.content h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.content p {
+    padding-top: 20px;
+}
+
+button {
+    width: 150px;
+    text-transform: capitalize;
+    padding: 5px 0;
+    margin: 20px 10px;
+    text-align: center;
+    border: 2px solid darkslategray;
+    border-radius: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+span {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    background-color: darkslategray;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+.secondtitle {
+    text-align: center;
+    padding: 50px;
+    /* color: rgb(24, 109, 165); */
+}
+.secondtitle h2{
+    font-weight: 100;
+    font-size: larger;
+}
+.imagedesign {
+    width: 100%;
+    height: 620px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 9%;
+}
+
+.design {
+    width: 65%;
+    height: 280px;
+    padding: 10px 40px;
+}
+
+.design img {
+    width: 100%;
+    height: 200px;
+
+}
+
+.design p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.modernhome {
+    width: 90%;
+    height: 400px;
+}
+
+.modernhome img {
+    width: 100%;
+    height: 100%;
+}
+
+.decoration {
+    /* color: rgb(24, 109, 165); */
+    text-align: center;
+    font-size: larger;
+}
+
+.scrollingcontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollingimage {
+    width: 90%;
+    margin: 0px 55px;
+    position: relative;
+    max-width: 1536px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    height: 150px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0, ));
+}
+
+.columnimage {
+    position: absolute;
+    left: max(calc(200px * 8),100%);
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slide {
+    to {
+        left: -200px;
+    }
+}
+
+.image1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+.image2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+.image3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+.image4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+.image5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+.image6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+.image7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+.image8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.aboutpage h3 {
+    text-align: center;
+    font-weight: 100;
+    /* color: crimson; */
+    margin-bottom: 20px;
+
+}
+
+.aboutpage p {
+    text-align: center;
+    font-size: 14px;
+    margin: 40px;
+    padding: 0px 40px;
+    opacity: 90%;
+}
+
+.footer {
+    width: 100%;
+    height: 270px;
+    background-color: #9e9e9e;
+}
+
+.footer h3 {
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.footerimage {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media all and (min-width:1024px) {
+    .content {
+        transform: translateY(-20%);
+    }
+
+    .modernhome {
+        padding: 40px;
+        margin: 20px;
+    }
+
+    .modernhome img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width:1024px) {
+    .content {
+        transform: translateY(-20%);
+    }
+
+    .design p {
+        font-size: 16px;
+    }
+
+    .modernhome {
+        padding: 40px;
+        margin: 20px 0px;
+    }
+
+    .modernhome img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .scrollingimage {
+        margin: 35px;
+    }
+}
+
+@media all and (max-width:900px) {
+    nav a {
+        padding: 0px 20px;
+    }
+
+    .content {
+        transform: translateY(-20%);
+    }
+
+    .imagedesign {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        height: 1000px;
+        row-gap: 2%;
+    }
+
+    .design p {
+        font-size: 16px;
+    }
+
+    .scrollingimage {
+        margin: 30px;
+    }
+    .modernhome {
+        padding: 40px;
+        margin: 20px 0px;
+    }
+
+    .modernhome img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width:768px) {
+    nav li {
+        font-size: medium;
+    }
+
+    nav a {
+        padding: 0px 15px;
+    }
+
+    .content {
+        transform: translateY(-20%);
+    }
+
+    .imagedesign {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 1000px;
+        row-gap: 4%;
+    }
+
+    .design p {
+        font-size: 15px;
+    }
+
+    .modernhome {
+        padding: 30px;
+        margin: 20px 0px;
+    }
+
+    .modernhome img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .scrollingimage {
+        margin-inline: 10px;
+        margin: 25px;
+    }
+    .aboutpage p {
+        font-size: 16px;
+    }
+
+    .footerimage {
+        padding-top: 16%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:650px) {
+
+    .humber {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .slidermenu li {
+        padding: 20px 0px !important;
+    }
+
+    .imagedesign {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1%;
+        height: 2000px;
+        justify-items: center;
+    }
+
+    .design p {
+        font-size: 14px;
+    }
+
+    .scrollingimage {
+        margin: 20px;
+    }
+
+    .modernhome {
+        padding: 22px;
+        margin: 20px 0px;
+    }
+
+    .modernhome img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutpage p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:360px) {
+    nav .logo a {
+        padding-left: 0px;
+        font-size: 25px;
+        padding-top: 6px;
+    }
+
+    .content {
+        transform: translateY(-25%);
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .secondtitle {
+        padding: 0px;
+    }
+
+    .secondtitle h2 {
+        padding: 20px 50px !important;
+    }
+
+    .imagedesign {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1%;
+        height: 1900px;
+    }
+
+    .design p {
+        font-size: 13px;
+    }
+
+    .modernhome {
+        padding: 12px;
+        margin: 15px 0px;
+    }
+
+    .modernhome img {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .scrollingimage {
+        border: 10px solid white;
+    }
+    .aboutpage p {
+        font-size: 12px;
+    }
+
+    .footerimage {
+        padding-top: 34%;
+    }
+}
