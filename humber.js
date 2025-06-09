@@ -8,7 +8,7 @@
     const logo2 = document.querySelector('.logo2')
     logo2.style.display='none'
     const cancel = document.querySelector('.cancel')
-    cancel.style.left='60%';
+    cancel.style.left='84%';
     cancel.style.position='absolute';
 }
 
