@@ -68,26 +68,26 @@ nav li:first-child {
 .humber {
     display: none;
 }
-
-/* nav li::after {
+.line{
+   position: relative;
+   display: inline-block;
+   padding: 5px 20px;
+}
+.line::after
+{
     content: '';
     width: 0;
     height: 4px;
-    background: darkslategray;
     position: absolute;
+    background-color: darkslategrey;
+    border-radius: 6px;
     left: 0;
-    bottom: -4px;
-    border-radius: 4px;
-    transition: 0.5s;
+    bottom: 4px;
+    transition: 1s;
 }
-
-nav ul li:hover::after {
-  width: 100%;
-
-} */
-
-
-
+.line:hover::after{
+    width: 100%;
+}
 .content {
     width: 100%;
     top: 35%;
@@ -306,7 +306,14 @@ button:hover span {
         padding-top: 8%;
     }
 }
-
+@media screen and (min-width:4000px){
+    .content{
+        transform: translateY(-120%);
+    }
+    .footerimage{
+        padding-top: 3%;
+    }
+}
 @media all and (max-width:1024px) {
     .content {
         transform: translateY(-20%);
