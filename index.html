@@ -2,9 +2,10 @@
 
 <head>
   <title class="">House Decoration</title>
-  <link  rel="shortcut icon" href="image/wel.jpg" >
+  <link  rel="shortcut icon" href="image/hometitle.png" >
   <meta name="viewport" content="width=device-width  initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="humber.js"></script>
 </head>
 
 <body>
@@ -12,13 +13,14 @@
     <nav>
       <ul class="slidermenu">
         <li class="cancel" onclick="hideslidermenu()"><a href="#"><img src="image/cancel.jpg" width="30px" height="30px"></a></li>
-        <li><a href="#banner">Home</a></li>
-        <li><a href="#modernhome">Bedroom</a></li>
-        <li><a href="#aboutpage">Services</a></li>
-        <li><a href="#footer">Contact</a></li>
+        <li class="logo" style="font-size: 20px; font-weight: bolder;"><a href="#">DreamHouse</a></li>
+        <li onclick="lists()"><a href="#banner">Home</a></li>
+        <li onclick="lists()"><a href="#modernhome">Bedroom</a></li>
+        <li onclick="lists()"><a href="#aboutpage">Services</a></li>
+        <li onclick="lists()"><a href="#footer">Contact</a></li>
       </ul>
       <ul>
-        <li class="logo" style="font-size: 30px; font-weight: bolder;"><a href="#">DreamHouse</a></li>
+        <li class="logo2" style="font-size: 30px; font-weight: bolder;"><a href="#">DreamHouse</a></li>
         <li class="menu"><a href="#banner">Home</a></li>
         <li class="menu"><a href="#modernhome">Bedroom</a></li>
         <li class="menu"><a href="#aboutpage">Services</a></li>
@@ -32,24 +34,6 @@
         <button type="button"><span></span>Selling</button>
       </div>
     </nav>
-    <script>
-       function showslidermenu(){
-         const slidermenu = document.querySelector('.slidermenu')
-         slidermenu.style.display='flex'
-         const humber = document.querySelector('.humber img')
-         humber.style.opacity='0%'
-         const content = document.querySelector('.content')
-         content.style.display='none'
-      }
-      function hideslidermenu(){
-         const slidermenu = document.querySelector('.slidermenu')
-         slidermenu.style.display='none'
-         const humber = document.querySelector('.humber img')
-         humber.style.opacity='100%'
-         const content = document.querySelector('.content')
-         content.style.display='block'
-      }
-    </script>
     </div>
   </div>
   
