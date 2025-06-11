@@ -11,12 +11,8 @@ body {
     background-size: cover;
     font-family: sans-serif;
 }
-
-nav {
-    padding-top: 10px;
-}
-
 nav ul {
+    padding-top: 20px;
     width: 90%;
     list-style: none;
     display: flex;
@@ -42,19 +38,22 @@ nav li:first-child {
     margin-right: auto;
 }
 
-.slidermenu {
+nav .slidermenu {
     display: none;
+    width: 90%;
+    margin: 0px;
+    background-color: white;
     position: absolute;
     li .logo{
         font-size: medium;
     }
     .line{
-        padding: 10px;
-        display: block;
+        display: inline-block;
         font-size: medium;
-        margin-left: 40%;
+        margin-left: 35%;
     }
     .cancel{
+
         top:5px;
         right: 20px;
         position: absolute;
