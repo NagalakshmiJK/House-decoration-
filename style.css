@@ -50,6 +50,7 @@ nav li:first-child {
     }
     .line{
         padding: 10px;
+        display: block;
         font-size: medium;
         margin-left: 40%;
     }
@@ -59,10 +60,7 @@ nav li:first-child {
         position: absolute;
     }
 }
-#cancel{
-    width: 30px;
-    height: 30px;
-}
+
 .menu {
     margin-top: 10px;
 }
