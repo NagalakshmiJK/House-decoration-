@@ -23,11 +23,6 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
 }
-
-.logo {
-    list-style: none;
-}
-
 nav li {
     font-size: larger;
     position: relative;
@@ -38,7 +33,6 @@ nav a {
     text-decoration: none;
     color: black;
     padding: 0px 30px;
-    /* margin: 0px 30px; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -49,17 +43,25 @@ nav li:first-child {
 }
 
 .slidermenu {
-    position: fixed;
-    right: 0;
-    height: 80vh;
-    width: 250px;
-    padding-top: 0px !important;
-    /* background-color: rgba(255, 255, 255, 0.2); */
     display: none;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    margin: 0px;
+    position: absolute;
+    li .logo{
+        font-size: medium;
+    }
+    .line{
+        padding: 10px;
+        font-size: medium;
+        margin-left: 40%;
+    }
+    .cancel{
+        top:5px;
+        right: 20px;
+        position: absolute;
+    }
+}
+#cancel{
+    width: 30px;
+    height: 30px;
 }
 .menu {
     margin-top: 10px;
@@ -82,13 +84,14 @@ nav li:first-child {
     background-color: darkslategrey;
     border-radius: 6px;
     left: 0;
-    bottom: 4px;
+    bottom: -4px;
     transition: 1s;
 }
 .line:hover::after{
     width: 100%;
 }
 .content {
+    display: block;
     width: 100%;
     top: 35%;
     position: absolute;
@@ -426,7 +429,7 @@ button:hover span {
 @media all and (max-width:650px) {
 
     .humber {
-        display: flex;
+        display: flex ;
     }
 
     .menu {
@@ -473,7 +476,6 @@ button:hover span {
         font-size: 25px;
         padding-top: 6px;
     }
-
     .content {
         transform: translateY(-25%);
     }
