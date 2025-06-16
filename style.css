@@ -21,7 +21,7 @@ img{
 nav ul {
     /* padding-top: 20px; */
     width: 90%;
-    padding: 20px 0px 0px 25px ;
+    padding: 20px 0px 0px 20px ;
     list-style: none;
     display: flex;
     justify-content: flex-end;
