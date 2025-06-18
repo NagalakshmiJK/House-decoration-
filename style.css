@@ -19,9 +19,8 @@ img{
     border: inset;
 }
 nav ul {
-    /* padding-top: 20px; */
     width: 90%;
-    padding: 20px 0px 0px 20px ;
+    padding: 10px 0px 0px 20px !important;
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -48,14 +47,19 @@ nav li:first-child {
 
 nav .slidermenu {
     display: none;
-    width: 100%;
+    width: 96%;
     margin: 0px;
     background-color: #ffffff ;
     position: absolute;
     padding-inline-start: 0px;
+    ul{
+        color:black;
+    }
     li .logo{
-        padding-left: 20px !important;
-        font-size: medium;
+        /* width: 80%; */
+        padding-left: 16%;
+        font-size: 16%;
+        top: 5px;
     }
     .line{
         display: inline-block;
@@ -63,8 +67,7 @@ nav .slidermenu {
         margin-left: 35%;
     }
     .cancel{
-
-        top:5px;
+        top:10px;
         right: 20px;
         position: absolute;
     }
@@ -443,7 +446,7 @@ button:hover span {
     }
 
     .slidermenu li {
-        padding: 20px 0px !important;
+        padding: 10px 0px !important;
     }
 
     .imagedesign {
