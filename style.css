@@ -26,11 +26,19 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
 }
+nav ul .humber{
+    display: none;
+}
 nav li {
     font-size: larger;
     position: relative;
 }
-
+.menu{
+    display: flex;
+}
+.humber{
+    display: none;
+}
 nav a {
     height: 100%;
     text-decoration: none;
@@ -78,7 +86,7 @@ nav .slidermenu {
 }
 
 .humber {
-    display: none;
+    display: none !important;
 }
 .line{
    position: relative;
@@ -318,15 +326,18 @@ button:hover span {
         padding-top: 8%;
     }
 }
-@media screen and (min-width:4000px){
+/* @media screen and (min-width:4000px){
     .content{
         transform: translateY(-120%);
     }
     .footerimage{
         padding-top: 3%;
     }
-}
+} */
 @media all and (max-width:1024px) {
+    .humber{
+        display: hidden;
+    }
     .content {
         transform: translateY(-20%);
     }
@@ -354,6 +365,9 @@ button:hover span {
 }
 
 @media all and (max-width:900px) {
+    .humber{
+        display: hidden;
+    }
     nav a {
         padding: 0px 20px;
     }
@@ -388,18 +402,20 @@ button:hover span {
 }
 
 @media all and (max-width:768px) {
+    
     nav li {
         font-size: medium;
+        
     }
-
+    .humber{
+        display :none;
+    }
     nav a {
         padding: 0px 15px;
     }
-
     .content {
         transform: translateY(-20%);
     }
-
     .imagedesign {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
@@ -437,8 +453,8 @@ button:hover span {
 
 @media all and (max-width:650px) {
     
-    .humber {
-        display: flex;
+    nav ul .humber {
+        display: flex  !important ;
     }
 
     .menu {
@@ -489,7 +505,6 @@ button:hover span {
         transform: translateY(-25%);
        
     }
-
     .content h2 {
         font-size: 15px;
     }
