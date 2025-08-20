@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Poppins";
+            background-color: #f2ebe1;
+        }
+
+        .contact {
+            width: 100%;
+            height: 200px;
+            font-size: 20px;
+            background-color: #f2ebe1;
+        }
+
+        h1 {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .link {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        a:hover{
+            color:darkslategray;
+        }
+
+        .details {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            align-items: center;
+        }
+
+        .phone, .email-detail {
+            margin: 10px 30px;
+        }
+
+        .title {
+            font-weight: 600;
+            padding: 10px 0;
+        }
+        .data{
+            padding: 10px 0;
+        }
+        .data h3{
+            font-size: 15px;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        @media all and (max-width:450px){
+            .details{
+                flex-direction: column;
+            }
+            .phone, .email-detail{
+                margin: 0 50px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="contact">
+        <h1>Contact</h1>
+        <div class="link">
+            <a href="index.html" id="contact-item1">Home ></a>
+            <a href="contact.html" id="contact-item2">contact</a>
+        </div>
+    </div>
+    <div class="details">
+        <div class="phone">
+            <!-- <img src="https://cdn-icons-png.flaticon.com/128/3616/3616215.png"> -->
+            <img src="https://cdn-icons-png.flaticon.com/128/9639/9639598.png" alt="">
+            <h3 class="title">Phone Number</h3>
+            <div class="data">
+                <h3>+91 12345 67890</h3>
+                <h3>+91 67890 12345</h3>
+            </div>
+        </div>
+        <div class="email-detail">
+            <img src="https://cdn-icons-png.flaticon.com/128/2965/2965306.png">
+            <!-- <img src="https://cdn-icons-png.flaticon.com/128/6806/6806987.png" alt=""> -->
+            <h3 class="title">Email</h3>
+            <div class="data">
+                <h3>housedesign@gmail.com</h3>
+                <h3>housedecoration@gmail.com</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
