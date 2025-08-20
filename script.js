@@ -60,8 +60,6 @@ function room(){
 const changehome = document.querySelector(".modernhome-changes")
 const photos = [
     "https://goodhomes.wwmindia.com/content/2022/jun/infusing-wood-in-this-neutral-themed-home.jpg",
-    "https://adhunikinteriors.com/wp-content/uploads/2020/09/interior-9.jpg",
-    "https://cdn.pixabay.com/photo/2017/09/09/18/25/living-room-2732939_1280.jpg",
     "https://blog.buyerselect.com/wp-content/uploads/2024/05/organic-modern-interior-design.jpg",
     "image/new.webp"
 ] 
