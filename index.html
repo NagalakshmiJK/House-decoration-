@@ -1,125 +1,233 @@
+<!DOCTYPE html>
 <html>
-
 <head>
   <title class="">House Decoration</title>
-  <link  rel="shortcut icon" href="image/hometitle.png" >
+  <link rel="shortcut icon" href="image/hometitle.png">
   <meta name="viewport" content="width=device-width  initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="humber.js"></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <div id="banner">
     <nav>
-      <ul class="slidermenu">
-        <li class="logo" style=" font-weight: bold; font-size: 120%; ">DreamHouse</li>
-        <li onclick="lists()"><a class="line" href="#banner">Home</a></li>
-        <li onclick="lists()"><a class="line" href="#modernhome">Bedroom</a></li>
-        <li onclick="lists()"><a class="line" href="#aboutpage">Services</a></li>
-        <li onclick="lists()"><a class="line" href="#footer">Contact</a></li>
-        <li class="cancel" onclick="hideslidermenu()"><img src="./image/cancel.jpg" width="30px" height="30px"></li>
+      <h2 id="titletext">DreamHouse</h2>
+      <ul>
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#house-title">About us</a></li>
+        <li><a href="#modernhome">Models</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
-      <ul >
-        <li class="logo2" style="font-size: 30px; font-weight: bolder;"><a href="#">DreamHouse</a></li>
-        <li class="menu"><a class="line" href="#banner">Home</a></li>
-        <li class="menu"><a class="line" href="#modernhome">Bedroom</a></li>
-        <li class="menu"><a class="line" href="#aboutpage">Services</a></li>
-        <li class="menu"><a class="line" href="#footer">Contact</a></li>
-        <li class="humber" onclick="showslidermenu()"><img src="image/hum.png"></li>
-      </ul>
-      <div class="content">
-        <h2>Design Modern House</h2>
-        <p> Transform Your home with stylish and modern Decor.<br>Discover ideas that bring comfort and elegance to every room.</p>
-        <button type="button"><span></span>View Details</button>
-        <button type="button"><span></span>Selling</button>
+      <div class="menu-item" onclick="view()">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </div>
+      <div class="cancel-item" onclick="hide()">
+        <div class="cancel" id="line1"></div>
+        <div class="cancel" id="line2"></div>
       </div>
     </nav>
+    <div class="content">
+      <h2>Design Modern House</h2>
+      <p> Transform Your home with stylish and modern Decor.<br>Discover ideas that bring comfort and elegance to every
+        room.</p>
+      <button type="button"><span></span>View Details</button>
+      <button type="button"><span></span>Services</button>
     </div>
   </div>
-  
-  <div class="secondstage">
-    <div class="secondtitle">
-      <h2>Design Model House</h2>
-      <p></p>
+  <!-- <div class="pop-item"></div> -->
+  </div>
+
+
+  <div id="house-title">
+    <div class="living-house">
+      <h2>Remodeling of a living House</h2>
     </div>
-    <div class="imagedesign">
-      <div class="design">
-        <img src="image/homed1.jpg">
-        <p>Simple and spacious home design for peacefull family living.</p>
+    <div class="card">
+      <div class="card-item">
+        <img src="https://5.imimg.com/data5/NW/TY/CH/SELLER-5615742/home-interior-design.jpeg">
+        <h3>Living House</h3>
+        <p class="card-para">Bright and airy living space designed comfort and family gathering.</p>
+        <button id="living-house-btn" onclick="house()"><a href="#living-house-content" id="living-house-btn">Learn
+            more</a></button>
       </div>
-      <div class="design">
-         <img src="image/homed2.jpg">
-         <p>Modern eco-home surrounded by nature designed for harmony and style.</p>
+      <div class="card-item">
+        <img
+          src="https://media.designcafe.com/wp-content/uploads/2021/05/26182848/indian-style-kitchen-interior-designs-for-your-home.jpg"
+          alt="">
+        <h3>Modern indian kitchen</h3>
+        <p class="card-para">Contemporary kitchen with smart storage and a blend of traditional and style.</p>
+        <button id="kitchen-btn" onclick="kitchen()"><a href="#new-kitchen-content" id="kitchen-btn">Learn
+            more</a></button>
       </div>
-      <div class="design">
-        <img src="image/plan2.webp">
-        <p>Elegant interior with a luxurious touch ideal for upscale living .</p>
+      <div class="card-item">
+        <img src="https://cdn.mos.cms.futurecdn.net/gJheTfTvFg5G32jUeCwTF.jpg" alt="">
+        <h3>Modeling living Room</h3>
+        <p class="card-para">Elegant living room with cozy seating and a luxurious modern vibe.</p>
+        <button id="room-btn" onclick="room()"><a href="#living-room-content" id="room-btn">Learn more</a></button>
       </div>
-      <div class="design">
-        <img src="image/homed4.jpg">
-        <p>Contemporary house designed for business meetings and VIP gathering.</p>
+    </div>
+  </div>
+
+
+  <div id="living-house-content">
+    <div class="first-title">
+      <h6 class="about">~About us~</h6>
+      <h2 class="living-house-heading">Modern House Design</h2>
+    </div>
+    <div class="livingdesign">
+      <div class="living-img">
+        <img src="https://5.imimg.com/data5/NW/TY/CH/SELLER-5615742/home-interior-design.jpeg" alt="" width="300px"
+          height="300px">
       </div>
-      <div class="design">
-        <img src="image/homed5.jpg">
-        <p>Perfect winter retreat home with a warm, modern layout for families.</p>
+      <div class="living-para">
+        <h4>Elegant lighting and color combinations with Budget-Friendly design package</h4>
+        <p>Transform your home into a stylish and comfortable space with our professional interior design
+          solution . From elegant living rooms to cozy bedrooms , we create design that blend beauty , functionality
+          and personal taste.</p>
       </div>
-      <div class="design">
-        <img src="image/home.jpg">
-        <p>Cultural and artistic interior design , ideal for performers and creatives .</p>
+    </div>
+  </div>
+
+  <div id="new-kitchen-content">
+    <div class="first-title">
+      <h6 class="about">~About us~</h6>
+      <h2 class="living-house-heading">New model kitchen</h2>
+    </div>
+    <div class="livingdesign">
+      <div class="living-img">
+        <img
+          src="https://media.designcafe.com/wp-content/uploads/2021/05/26182848/indian-style-kitchen-interior-designs-for-your-home.jpg"
+          alt="" width="300px" height="300px">
+      </div>
+      <div class="living-para">
+        <h4>Smart layouts with traditional Indian touch</h4>
+        <p>Our modular kitchen design combine modern Innovation with indian style, efficient storage , durable materials
+          and stylish finisher .We bring both functionality and elegant to your cooking space.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="living-room-content">
+    <div class="first-title">
+      <h6 class="about">~About us~</h6>
+      <h2 class="living-house-heading">Remodeling of living room</h2>
+    </div>
+    <div class="livingdesign">
+      <div class="living-img">
+        <img src="https://cdn.mos.cms.futurecdn.net/gJheTfTvFg5G32jUeCwTF.jpg" alt="" width="300px" height="300px">
+      </div>
+      <div class="living-para">
+        <h4>A Perfect blend of atmosphere ,colour and materials</h4>
+        <p>Our living room designs and focus on creating an atmosphere of comfort and elegance. With carefully chosen
+          colors, materials luxurious spaces that are inviting modern.</p>
       </div>
     </div>
   </div>
 
   <div id="modernhome">
-    <img src="image/new.webp" alt="" width="900px" height="400px">
+    <h2 class="modern-title">Customized Cozy Living Spaces For You</h2>
+    <img class="modernhome-changes" src="image/new.webp" alt="" width="400px" height="100px">
   </div>
 
+<!-- 
   <div class="scrollcontect">
-    <div class="decoration">House Design and Attractions</div>
-       <div class="scrollingimage ">
-        <div class="columnimage image1 ">
-          <img src="image/design.jpg" width="200px" height="150px">
-        </div>
-        <div class="columnimage image2">
-          <img  src="image/homed2.jpg" width="200px" height="150px">
-        </div>
-        <div class="columnimage image3">
-          <img  src="image/homed4.jpg" width="200px" height="150px">
-        </div>
-        <div class="columnimage image4">
-          <img  src="image/plan2.webp" width="200px" height="150px">
-        </div>
-        <div class="columnimage image5">
-          <img  src="image/plan.jpg" width="200px" height="150px">
-        </div>
-        <div class="columnimage image6">
-          <img  src="image/homed3.jpg" width="200px" height="150px">
-        </div>
-        <div class="columnimage image7">
-          <img  src="image/new.webp" width="200px" height="150px">
-        </div>
-        <div class="columnimage image8">
-          <img  src="image/homed5.jpg" width="200px" height="150px">
-        </div>
+    <h2 class="decoration">House Design and Attractions</h2>
+    <div class="scrollingimage ">
+      <div class="columnimage image1 ">
+        <img src="image/design.jpg" width="200px" height="150px">
+      </div>
+      <div class="columnimage image2">
+        <img src="image/homed2.jpg" width="200px" height="150px">
+      </div>
+      <div class="columnimage image3">
+        <img src="image/homed4.jpg" width="200px" height="150px">
+      </div>
+      <div class="columnimage image4">
+        <img src="image/plan2.webp" width="200px" height="150px">
+      </div>
+      <div class="columnimage image5">
+        <img src="image/plan.jpg" width="200px" height="150px">
+      </div>
+      <div class="columnimage image6">
+        <img src="image/homed3.jpg" width="200px" height="150px">
+      </div>
+      <div class="columnimage image7">
+        <img src="image/new.webp" width="200px" height="150px">
+      </div>
+      <div class="columnimage image8">
+        <img src="image/homed5.jpg" width="200px" height="150px">
+      </div>
+    </div>
+  </div> -->
+
+  <div id="services">
+    <h2>creating dream house and exceeding expectation</h2>
+    <div class="services-content">
+      <div class="service-item">
+        <h3>House design</h3>
+        <p>We craft elegant andfunctional home interiors tailored to your needs.Our design combine comfort, style and
+          modern trends to create spaces that truly feel like home.</p>
+        <a href="contact.html"><h4><img src="https://cdn-icons-png.flaticon.com/128/271/271226.png">order this service</h4></a>
+      </div>
+      <div class="service-item">
+        <h3>Apartment Design</h3>
+        <p>We specialize in creating unique and cozy living spaces that reflect your personality and lifestyle.Compact
+          spaces re transformed into stylish nd functional homes.</p>
+        <a href="contact.html"><h4><img src="https://cdn-icons-png.flaticon.com/128/271/271226.png">order this service</h4></a>
+      </div>
+      <div class="service-item">
+        <h3>Lighting Design</h3>
+        <p>Our lighting solution balance functionality and aesthetics.We design lighting setups that highlight decor,
+          and improve everyday living comfort.</p>
+        <a href="contact.html"><h4><img src="https://cdn-icons-png.flaticon.com/128/271/271226.png">order this service</h4></a>
+      </div>
+      <div class="service-item">
+        <h3>Office Design</h3>
+        <p>We design modern and productive office spaces that inspire creativity and collaboration. From layouts to
+          furniture, every supports a professional work environment.</p>
+        <a href="contact.html"><h4><img src="https://cdn-icons-png.flaticon.com/128/271/271226.png">order this service</h4></a>
+      </div>
     </div>
   </div>
 
-  <div id="aboutpage">
-    <h3>About Stayhouse</h3>
-    <p> Stayhouse offer a collection of modern , elegant and comfortables homes tailored to our lifestyle . Our homes are designed with precision ,combining beauty ,<br> function and innovation . Whethere you are looking for Your first home or Your dream home , we provide a range designs that meet every need . <br>Discover stylish interiors , smart layouts and exceptional built Quality all in one place .</p>
-  </div>
-
-  <div id="footer">
-    <h3>Modern Dream House</h3>
-      <div class="footerimage">
-        <a href="https://github.com/nagalakshmijk"><img src="image/git1.png" width="20px" height="20px"></a>
-        <a href="https://www.linkedin.com/in/nagalakshmi-j-k-b31225297/"><img src="image/linkedin.png" width="20px" height="20px"></a>
-        <a href="#"><img src="image/mail.png" width="20px" height="20px"></a>
+  <footer id="footer">
+    <div class="title-related">
+      <h3>DreamHouse</h3>
+      <p>We deliver a wide range of design and architectural solutions to create an environment that our clients love.
+      </p>
+      <div class="contact-links">
+        <img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png">
+        <img src="https://cdn-icons-png.flaticon.com/128/3938/3938052.png" class="insta">
       </div>
-      <p>copyright &copy; 2025 House designs </p>
-  </div>
+    </div>
+    <div class="navigation">
+      <p class="navbar">Navigation</p>
+      <a href="#banner">
+        <p class="navigator">Home</p>
+      </a>
+      <a href="#house-title">
+        <p class="navigator">About us</p>
+      </a>
+      <a href="#modernhome">
+        <p class="navigator">Models</p>
+      </a>
+      <a href="#services">
+        <p class="navigator">Services</p>
+      </a>
+      <a href="#footer">
+        <p class="navigator">Contact</p>
+      </a>
+    </div>
+    <div class="offer">
+      <h6>Booking offer</h6>
+      <p>Get 10% off on any service:</p>
+      <input id="email" placeholder="Email"><br>
+      <button type="submit" id="booking" onclick="booking()">Contact for me</button>
+    </div>
+  </footer>
 </body>
 
 </html>
-
-
