@@ -10,7 +10,7 @@ body {
     background-position: center center;
     background-size: cover;
     font-family: sans-serif, "Poppins";
-    /* position: relative; */
+    position: relative;
 }
 
 nav {
@@ -143,7 +143,7 @@ button:hover span {
     width: 100%;
 }
 
-/* .pop-item {
+.pop-item {
     background-color: darkslategray;
     width: 100%;
     height: 100%;
@@ -152,8 +152,7 @@ button:hover span {
     left: 0;
     opacity: 80%;
     display: none;
-    z-index: 1;
-} */
+}
 
 .living-house {
     text-align: center;
@@ -210,7 +209,7 @@ button:hover span {
     width: 96%;
     display: none;
     background-color: #dfd1a793;
-    margin: 0 20px ;
+    margin: 0 20px;
 }
 
 .first-title {
@@ -226,8 +225,14 @@ button:hover span {
 }
 
 .living-img {
+    width: 300px;
+    height: 300px;
     border-radius: 0px;
     margin: 0 25px;
+}
+.living-img img{
+    width: 100%;
+    height: 100%;
 }
 
 .living-house-heading {
@@ -302,14 +307,16 @@ button:hover span {
     color: darkslategrey;
     margin-bottom: 0;
 }
-.service-item h4{
+
+.service-item h4 {
     font-weight: 500;
     font-size: 15px;
     margin: 0;
 }
-.service-item  img {
+
+.service-item img {
     transform: rotate(320deg);
-    padding-right:10px;
+    padding-right: 10px;
     width: 17px;
     height: 17px;
     color: black;
@@ -402,9 +409,10 @@ footer {
     width: 400px;
 }
 
-.navigation{
+.navigation {
     margin: 0 25px;
 }
+
 .navigation .navbar {
     font-size: 11px;
     padding: 15px 0;
@@ -414,24 +422,31 @@ footer {
     display: block;
     text-align: start;
     font-size: 14px;
-
+    padding:5px ;
 }
-.navigator , .navbar{
+
+.navigator,
+.navbar {
     margin: 0;
 }
+
 .offer {
     display: block;
 }
-
+.navigation a{
+    margin:0;
+}
 .contact-links img {
     width: 30px;
     height: 30px;
     margin: 0 5px;
 }
-.insta{
+
+.insta {
     width: 25px !important;
     height: 25px !important;
 }
+
 #email {
     padding: 5px;
     outline: none;
@@ -519,10 +534,11 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    
-    .title-related p{
+
+    .title-related p {
         width: 300px;
     }
+
     .scrollingimage {
         margin-inline: 10px;
         margin: 25px;
@@ -535,7 +551,7 @@ footer {
         font-size: 19px;
     }
 
-    ul{
+    ul {
         padding-top: 50%;
     }
 
@@ -564,16 +580,7 @@ footer {
     .service-item p {
         width: 250px;
     }
-    /* footer{
-        flex-direction: column;
-        align-items: center;
-    }
-    .title-related{
-        flex-direction: column;
-    }
-    .navigation, .offer{
-        flex-direction: row;
-    } */
+
     .title-related p {
         width: 250px;
     }
@@ -583,7 +590,8 @@ footer {
     #titletext {
         font-size: 17px;
     }
-    ul{
+
+    ul {
         padding-top: 70%;
     }
 
@@ -599,17 +607,32 @@ footer {
     .cancel {
         width: 25px;
     }
-    footer{
+
+    footer {
         flex-direction: column;
         align-items: center;
     }
-    .title-related{
+
+    .title-related {
         flex-direction: column;
     }
-    .navigation, .offer{
+
+    .navigation,
+    .offer {
         flex-direction: row;
     }
 
+    #living-house-content,
+    #new-kitchen-content,
+    #living-room-content {
+        width: 90%;
+    }
+    .living-img img{
+    width: 80%;
+    height: 95%;
+    padding: 0 30px;
+    margin: 0;
+}
 }
 
 @media all and (max-width:360px) {
